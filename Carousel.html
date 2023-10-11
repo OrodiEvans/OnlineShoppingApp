@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Icon" href="Images/Animal.png">
+    <!-- Link to Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to jQuery and Bootstrap JavaScript from a CDN -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>Carousel</title>
+    <style>
+        .carousel-item {
+            height: 32rem;
+            background: black;
+            color: white;
+            position: relative;
+        }
+        .container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+        .overlay-image{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat;
+            opacity: 0.5;
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<a href="Bootstrap Carousel.html" target="_self">Bootstrap Carousel</a>
+<a href="Bootstrap Form Example.html" target="_self">Bootstrap Form Example</a>
+<!-- Your Carousel Code Goes Here -->
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+<!-- Slides -->
+<div class="carousel-inner">
+    <!-- Slide 1: Parrot -->
+    <div class="carousel-item active" data-interval="1500">
+        <div class="overlay-image" style="background-image: url(Images/Parrot.jpg)"></div>
+        <div class="container">
+            <h1>Parrot</h1>
+            <p>Parrots are colorful and intelligent birds known for their ability to mimic sounds and human speech. They have strong, curved beaks and zygodactyl feet (two toes pointing forward and two backward). Parrots are found in tropical and subtropical regions around the world. They are popular as pets due to their vibrant plumage and entertaining behaviors.</p>
+            <a href="#" class="btn btn-lg btn-primary">Join Us</a>
+        </div>
+    </div>
+
+    <!-- Slide 2: Tiger -->
+    <div class="carousel-item" data-interval="1000">
+        <div class="overlay-image" style="background-image: url(Images/Tiger.jpg)"></div>
+        <div class="container">
+            <h1>Tiger</h1>
+            <p>A tiger is a powerful and majestic big cat known for its striking orange coat with black stripes. It is one of the apex predators in its habitat and is often referred to as the largest of the big cats. Tigers are known for their strength, agility, and stealth, making them formidable hunters. They are solitary animals and primarily found in various habitats across Asia, including forests, grasslands, and mangrove swamps. Sadly, tigers are endangered due to habitat loss and poaching for their valuable body parts. Conservation efforts are in place to protect these magnificent creatures and ensure their survival in the wild.</p>
+            <a href="#" class="btn btn-lg btn-primary">Join Us</a>
+        </div>
+    </div>
+
+    <!-- Slide 3: Elephant -->
+    <div class="carousel-item" data-interval="1000">
+        <div class="overlay-image" style="background-image: url(Images/Elephant.jpg)"></div>
+        <div class="container">
+            <h1>Elephant</h1>
+            <p>Elephants are large, herbivorous mammals known for their long trunks and large ears. They are known for their intelligence, social behavior, and strong family bonds. Elephants are native to various parts of Africa and Asia. They have a grayish skin, thick legs, and are considered one of the most iconic and majestic animals in the world.</p>
+            <a href="#" class="btn btn-lg btn-primary">Join Us</a>
+        </div>
+    </div>
+
+    <!-- Slide 4: Lion -->
+    <div class="carousel-item" data-interval="1000">
+        <div class="overlay-image" style="background-image: url(Images/Lion.jpg)"></div>
+        <div class="container">
+            <h1>Lion</h1>
+            <p>Lions are large carnivorous felines known as "big cats." They are known for their impressive manes (in the case of males) and their social behavior in prides. Lions are apex predators and are often referred to as the "king of the jungle." They are primarily found in grasslands and savannas in Africa.</p>
+            <a href="#" class="btn btn-lg btn-primary">Join Us</a>
+        </div>
+    </div>
+
+    <!-- Slide 5: Turtle -->
+    <div class="carousel-item" data-interval="1000">
+        <div class="overlay-image" style="background-image: url(Images/turtle.jpg)"></div>
+        <div class="container">
+            <h1>Turtle</h1>
+            <p>Turtles are reptiles with a bony or cartilaginous shell that protects their body. They are known for their slow movement and the ability to retract their limbs into their shell. Turtles can be found in both aquatic and terrestrial environments. They have a wide range of species, including sea turtles, freshwater turtles, and tortoises.</p>
+            <a href="#" class="btn btn-lg btn-primary">Join Us</a>
+        </div>
+    </div>
+
+    <!-- Slide 6: Eagle -->
+    <div class="carousel-item" data-interval="1000">
+        <div class="overlay-image" style="background-image: url(Images/Eagle.jpg)"></div>
+        <div class="container">
+            <h1>Eagle</h1>
+            <p>Eagles are large birds of prey known for their powerful beaks, sharp talons, and keen eyesight. They are renowned for their ability to soar at great heights and spot prey from a long distance. Eagles are carnivorous and hunt a variety of animals, including fish, mammals, and birds. They are often associated with strength and freedom and are considered national symbols in some countries.</p>
+            <a href="#" class="btn btn-lg btn-primary">Join Us</a>
+        </div>
+    </div>
+</div>
+  <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+    <!-- Add Bootstrap JS here (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

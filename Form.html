@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="Images/Form.png">
+  <link rel="stylesheet" href="Form.css">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+    </style>
+
+</head>
+<body>
+<!__id and class__>
+<h1 id="heading1">Student Information</h1>
+<form action="">
+  <fieldset>
+      <legend>User Information</legend>
+  <label for="fname">Firstname:</label>
+  <input type="text" id="fname" placeholder="Enter your firstname"> <br><br>
+  <label for="sname">Surname:</label>
+  <input type="text" id="sname" placeholder="Enter Surname"> <br><br>
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" placeholder="Enter you email"> <br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd"> <br><br>
+
+      Select your Gender :
+      <input type="checkbox"> Male <input type="checkbox"> Female <br>
+
+    <p>Which is your favourite game?</p>
+    <input type="checkbox"> Basketball <br>
+    <input type="checkbox"> Volleyball <br>
+    <input type="checkbox"> Netball <br>
+    <input type="checkbox"> Football <br>
+
+    <p>Which programming are you proficient in?</p>
+    <input type="radio"> Kotlin <br>
+    <input type="radio"> Python <br>
+    <input type="radio"> Java <br>
+    <input type="radio"> C++ <br>
+
+    <p>Fill in additional details?</p>
+    <textarea name="" id="my text" cols="50" rows="2" placeholder="Type..."></textarea> <br><br>
+
+    <!---when you want select option immediately after text--->
+
+    Select nationality :
+    <select name="Country" id="Country">
+        <option value="Kenya">Kenya</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Burundi">Burundi</option>
+    </select> <br><br>
+
+  <button type="submit">Submit</button>
+  </fieldset>
+</form>
+<h1 id="Patient">Patient Records</h1>
+<h1 class="Employee">Employee Details</h1>
+<br><br>
+<button type="submit">Submit</button>
+</body>
+</html>

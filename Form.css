@@ -1,0 +1,9 @@
+h1#heading1{
+    color: red;
+}
+h1#Patient{
+    color: #f5e909;
+}
+h1.Employee{
+    color: blue;
+}

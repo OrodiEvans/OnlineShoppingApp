@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="Images/Icon2.png">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/37f96a2201.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Evans</span><br> from Kenya</h1>
+        </div>
+    </div>
+
+</div>
+<!--------------------------about---------------------------->
+<div id="about">
+    <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="image/user.png">
+        </div>
+        <div class="about-col-2">
+           <h1 class="sub-title">About Me</h1>
+            <p>Hello, I'm Evans, and I'd like to share a bit about myself. Life is a journey, and each of us has a unique story to tell.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+             <div class="tab-contents active-tab" id="Skills">
+                 <ul>
+                     <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                     <li><span>Web Development</span><br>Web App Development</li>
+                     <li><span>App Development</span><br>Building Android</li>
+                 </ul>
+             </div>
+                <div class="tab-contents" id="Experience">
+                 <ul>
+                     <li><span>2019 - Current</span><br>Account Operations at NCBA BanK</li>
+                     <li><span>2017 - 2019</span><br>Contact Center Agent at Horizon contact center</li>
+                     <li><span>2016 - 2017</span><br>Internship at State Department of Urban Planing and Development</li>
+                 </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                 <ul>
+                     <li><span>2023</span><br>Emobilis Institute</li>
+                     <li><span>2017</span><br>Kenyatta University</li>
+                     <li><span>2008</span><br>Butula Boys High School.</li>
+                 </ul>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------Services---------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> Our web design services are tailored to meet your unique needs, ensuring a stunning and effective online presence that leaves a lasting impression.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Android Design</h2>
+                <p>We specialize in Android app design, transforming concepts into captivating, user-centric, and functional interfaces.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>App Design</h2>
+                <p>We specialize in crafting user-centered and aesthetically pleasing app interfaces that captivate users and drive engagement. Whether you're developing an iOS, Android, or cross-platform app, we have the skills and experience to make your vision a reality </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+</body>
+</html>
